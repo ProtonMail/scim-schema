@@ -1,10 +1,10 @@
 {
-    "name": "tmilos/scim-schema",
+    "name": "protonlabs/scim-schema",
     "license": "MIT",
     "description": "SCIM schema library",
     "type": "library",
     "keywords": ["scim", "scim schema", "RFC7643"],
-    "homepage": "https://github.com/tmilos/scim-schema",
+    "homepage": "https://github.com/protonlabs/scim-schema",
     "authors": [
         {
             "name": "Milos Tomic",
