@@ -196,7 +196,7 @@ class AttributeBuilder
     }
 
     /**
-     * @param \string[] $canonicalValues
+     * @param string[] $canonicalValues
      *
      * @return AttributeBuilder
      */
@@ -208,7 +208,7 @@ class AttributeBuilder
     }
 
     /**
-     * @param \string[] $referenceTypes
+     * @param string[] $referenceTypes
      *
      * @return AttributeBuilder
      */

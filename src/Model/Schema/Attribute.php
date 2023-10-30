@@ -59,12 +59,12 @@ class Attribute implements SerializableInterface
      * @param bool        $required
      * @param string      $description
      * @param Attribute[] $subAttributes
-     * @param \string[]   $canonicalValues
+     * @param string[]   $canonicalValues
      * @param bool        $caseExact
      * @param string      $mutability
      * @param string      $returned
      * @param string      $uniqueness
-     * @param \string[]   $referenceTypes
+     * @param string[]   $referenceTypes
      */
     public function __construct(
         $name,
@@ -143,7 +143,7 @@ class Attribute implements SerializableInterface
     }
 
     /**
-     * @return \string[]
+     * @return string[]
      */
     public function getCanonicalValues()
     {
@@ -183,7 +183,7 @@ class Attribute implements SerializableInterface
     }
 
     /**
-     * @return \string[]
+     * @return string[]
      */
     public function getReferenceTypes()
     {
@@ -274,7 +274,7 @@ class Attribute implements SerializableInterface
                 $subAttributes[] = static::deserializeObject($subAttribute);
             }
         }
-        $result = new static(
+        return new static(
             $data['name'],
             $data['type'],
             $data['multiValued'],
@@ -288,7 +288,5 @@ class Attribute implements SerializableInterface
             isset($data['uniqueness']) ? $data['uniqueness'] : null,
             isset($data['referenceTypes']) ? $data['referenceTypes'] : []
         );
-
-        return $result;
     }
 }

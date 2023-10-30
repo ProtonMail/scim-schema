@@ -1,4 +1,4 @@
-name: PHP Unit/Quality CI
+name: PHP unit tests
 
 on:
   push:
