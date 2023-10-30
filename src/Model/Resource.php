@@ -44,7 +44,7 @@ abstract class Resource extends SchemaBase implements SerializableInterface, Des
     abstract public function getResourceType();
 
     /**
-     * @return \string[]
+     * @return string[]
      */
     public function getSchemas()
     {
@@ -123,7 +123,7 @@ abstract class Resource extends SchemaBase implements SerializableInterface, Des
             if (!$extension) {
                 continue;
             }
-            if ($extension instanceof ResourceExtension) {
+            if ($extension instanceof SerializableInterface) {
                 $result[$schemaId] = $extension->serializeObject();
             } elseif (is_array($extension)) {
                 $result[$schemaId] = $extension;

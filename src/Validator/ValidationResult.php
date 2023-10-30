@@ -54,7 +54,7 @@ class ValidationResult
     }
 
     /**
-     * @return \string[]
+     * @return string[]
      */
     public function getErrorsAsStrings()
     {
