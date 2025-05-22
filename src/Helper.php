@@ -47,7 +47,7 @@ abstract class Helper
      *
      * @return \DateTime
      */
-    public static function string2dateTime($string, \DateTimeZone $zone = null)
+    public static function string2dateTime($string, ?\DateTimeZone $zone = null)
     {
         if (!$zone) {
             $zone = new \DateTimeZone('UTC');

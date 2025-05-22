@@ -16,6 +16,7 @@ EOT;
 return (new PhpCsFixer\Config())
     ->setRules([
         '@Symfony' => true,
+        'nullable_type_declaration_for_default_null_value' => true,
         'simplified_null_return' => false,
         'phpdoc_no_empty_return' => false,
         'yoda_style' => false,
