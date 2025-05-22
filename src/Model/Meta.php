@@ -55,7 +55,7 @@ class Meta implements SerializableInterface
      * @param string    $resourceType
      * @param \DateTime $createdAt
      */
-    public function __construct($resourceType, \DateTime $createdAt = null)
+    public function __construct($resourceType, ?\DateTime $createdAt = null)
     {
         $this->resourceType = $resourceType;
         $this->created = $createdAt;
